@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/img1.jpg) no-repeat;
+}
+
+.loader_css{
+position: fixed;
+background: #333;
+width: 100%;
+height: 100%;
+
+}
+
+.loader{
+width: 100%;
+height: 100%;
+top: calc(50vh - 50px);
+left: calc(50vh - 50px);
+display: flex;
+position: absolute;
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+.loader::before{
+
+    content:'';
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border-radius: 50px;
+    border: 20px ridge;
+    border-width: 25px;
+    border-color: #2ee3e8 transparent;
+    animation: load is infinite;
+
+}
+
+
+@keyframes load{
+    50%{
+        transform: rotatez(180deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
